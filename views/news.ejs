@@ -12,7 +12,8 @@
     </style>
 </head>
 <body>
-    <h1><%= obj.title%> : <%= obj.id %></h1>
+    <%- include ('blocks/header') -%>
+    <h1><%= obj.title %> : <%= obj.id %></h1>
     <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nemo nihil iste quasi delectus iusto, repellendus vel consectetur? Doloremque ullam voluptatem quam dignissimos enim ex sequi, eius hic nihil unde.</div>
     <ul>
         <% obj.paragraphs.forEach((item)=>{ %>
